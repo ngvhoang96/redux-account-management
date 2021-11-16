@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h3 {
+	@apply text-xl leading-5 font-bold mb-3;
+}
+
+p {
+	@apply my-3;
+}
+
+input {
+	@apply border border-indigo-300 px-3 py-2;
+}
+
+.link {
+	@apply text-blue-500 underline hover:text-blue-700;
+}
+
+.btn {
+	@apply py-1 px-2 font-bold rounded-lg hover:border-opacity-100;
+}
+
+.btn-primary {
+	@apply bg-indigo-500 hover:bg-indigo-700 text-white border-indigo-900 border-2 border-opacity-0;
+}
+
+.btn-secondary {
+	@apply text-gray-700 border-black border-2 border-opacity-20;
+}
+
+.app-container {
+	@apply mx-4 sm:w-3/4 sm:mx-auto;
+}

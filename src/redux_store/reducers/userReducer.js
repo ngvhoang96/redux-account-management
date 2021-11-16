@@ -8,6 +8,8 @@ const userReducer = (state, action) => {
 	switch (action.type) {
 		case "action.getUser":
 			return initialState;
+		case "action.updateUser":
+			return action.payload;
 		default:
 			return null;
 	}

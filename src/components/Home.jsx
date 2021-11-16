@@ -3,11 +3,14 @@ import { useSelector } from "react-redux";
 
 const Home = () => {
 	const isLoggedIn = useSelector((state) => state.loginReducer);
+	const userData = useSelector((state) => state.userReducer);
 	return (
 		<>
-			<h3>Hello {isLoggedIn ? "member" : "guest"},</h3>
+			<h3>Hello {isLoggedIn ? userData.name : "guest"},</h3>
 			<p>What can we do for you today?</p>
-			<Link to="/account">Access account</Link>
+			<Link className="link" to="/account">
+				Access account
+			</Link>
 		</>
 	);
 };

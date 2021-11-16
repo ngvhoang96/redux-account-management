@@ -9,3 +9,7 @@ export const actionLogout = () => {
 export const actionGetUser = () => {
 	return { type: "action.getUser" };
 };
+
+export const actionUpdateUser = (data) => {
+	return { type: "action.updateUser", payload: data };
+};
